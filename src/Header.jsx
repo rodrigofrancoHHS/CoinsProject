@@ -38,6 +38,11 @@ function Header() {
     navigate('/login');
   };
 
+  function toggleDropdown() {
+    const dropdown = document.getElementById('dropdown-menu');
+    dropdown.classList.toggle('hidden');
+  }
+
   return (
     <header className="bg-gradient-to-r from-yellow-600 to-gray-900 text-white py-6 pb-4">
   <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4">
@@ -47,7 +52,8 @@ function Header() {
       </Link>
     </div>
 
-    <nav className="mt-4 sm:mt-0 flex justify-center sm:flex-grow">
+    {/* Menu para computadores (oculto em dispositivos móveis) */}
+    <nav className="hidden sm:flex mt-4 sm:mt-0 justify-center sm:flex-grow">
       <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 text-xl">
         <li>
           <Link to="/MenuSweats" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
@@ -77,11 +83,50 @@ function Header() {
       </ul>
     </nav>
 
-    <div className="flex items-center mt-4 sm:mt-0 space-x-4">
+    {/* Menu suspenso para dispositivos móveis (oculto em telas maiores) */}
+    <div className="sm:hidden">
+      <button
+        onClick={() => toggleDropdown()} // Esta função mostrará/ocultará o menu
+        className="block text-xl text-white px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-600 to-gray-900"
+      >
+        Menu
+      </button>
+      <ul
+        id="dropdown-menu"
+        className="hidden bg-gray-900 mt-2 p-2 rounded-lg"
+      >
+        <li>
+          <Link to="/MenuSweats" className="text-white hover:text-yellow-600 block py-2">
+            Sweats
+          </Link>
+        </li>
+        <li>
+          <Link to="/MenuTshirts" className="text-white hover:text-yellow-600 block py-2">
+            T-Shirts
+          </Link>
+        </li>
+        <li>
+          <Link to="/MenuCaps" className="text-white hover:text-yellow-600 block py-2">
+            Chapéus
+          </Link>
+        </li>
+        <li>
+          <Link to="/SobreNos/" className="text-white hover:text-yellow-600 block py-2">
+            Sobre Nós
+          </Link>
+        </li>
+        <li>
+          <Link to="/ContactPage/" className="text-white hover:text-yellow-600 block py-2">
+            Contactos
+          </Link>
+        </li>
+      </ul>
+    </div>
+
+    <div className="flex items-center space-x-4">
       {isLoggedIn ? (
         <>
-          <span>Bem-vindo, <Link to="/personal-info"> {username}! </Link></span>
-          
+          <span>Bem-vindo,<Link to="/personal-info"> {username}! </Link></span>
           <button className="hover:bg-black hover:text-white rounded-full p-2" onClick={handleLogout}>
             <IoLogOutOutline className="h-6 w-6 text-gray-900 hover:text-white" />
           </button>
@@ -101,6 +146,8 @@ function Header() {
     </div>
   </div>
 </header>
+
+
 
 
   );
