@@ -40,67 +40,69 @@ function Header() {
 
   return (
     <header className="bg-gradient-to-r from-yellow-600 to-gray-900 text-white py-6 pb-4">
-      <div className="container mx-auto flex items-center justify-between py-4">
-        <div className="flex items-center">
-          <Link to="/">
-            <img src="/stalogo.png" alt="Logotipo" className="h-16 pb-0" />
+  <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4">
+    <div className="flex items-center">
+      <Link to="/">
+        <img src="/stalogo.png" alt="Logotipo" className="h-16 pb-0" />
+      </Link>
+    </div>
+
+    <nav className="mt-4 sm:mt-0 flex justify-center sm:flex-grow">
+      <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 text-xl">
+        <li>
+          <Link to="/MenuSweats" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
+            Sweats
           </Link>
-        </div>
+        </li>
+        <li>
+          <Link to="/MenuTshirts" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
+            T-Shirts
+          </Link>
+        </li>
+        <li>
+          <Link to="/MenuCaps" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
+            Chapéus
+          </Link>
+        </li>
+        <li>
+          <Link to="/SobreNos/" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
+            Sobre Nós
+          </Link>
+        </li>
+        <li>
+          <Link to="/ContactPage/" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
+            Contactos
+          </Link>
+        </li>
+      </ul>
+    </nav>
 
-        <nav className="flex justify-center flex-grow">
-          <ul className="flex space-x-4 text-xl">
-            <li>
-              <Link to="/MenuSweats" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-                Sweats
-              </Link>
-            </li>
-            <li>
-              <Link to="/MenuTshirts" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-                T-Shirts
-              </Link>
-            </li>
-            <li>
-              <Link to="/MenuCaps" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-                Chapéus
-              </Link>
-            </li>
-            <li>
-              <Link to="/SobreNos/" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-                Sobre Nós
-              </Link>
-            </li>
-            <li>
-              <Link to="/ContactPage/" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-                Contactos
-              </Link>
-            </li>
-          </ul>
-        </nav>
+    <div className="flex items-center mt-4 sm:mt-0 space-x-4">
+      {isLoggedIn ? (
+        <>
+          <span>Bem-vindo, <Link to="/personal-info"> {username}! </Link></span>
+          
+          <button className="hover:bg-black hover:text-white rounded-full p-2" onClick={handleLogout}>
+            <IoLogOutOutline className="h-6 w-6 text-gray-900 hover:text-white" />
+          </button>
+          <button className="hover:bg-black hover:text-white rounded-full p-2">
+            <Link to="/cart">
+              <FiShoppingCart className="h-6 w-6 text-gray-900 hover:text-white" />
+            </Link>
+          </button>
+        </>
+      ) : (
+        <button className="bg-black hover:bg-white hover:text-white rounded-full p-2">
+          <Link to="/login">
+            <FiUser className="h-6 w-6 text-white hover:text-black" />
+          </Link>
+        </button>
+      )}
+    </div>
+  </div>
+</header>
 
-        <div className="flex items-center space-x-4">
-          {isLoggedIn ? (
-            <>
-              <span>Bem-vindo,<Link to="/personal-info"> {username}! </Link></span> 
-              
-              <button className="hover:bg-black hover:text-white rounded-full p-2" onClick={handleLogout}>
-                <IoLogOutOutline className="h-6 w-6 text-gray-900 hover:text-white" />
-              </button>
-              <button className="hover:bg-black hover:text-white rounded-full p-2">
-                <Link to="/cart">
-                  <FiShoppingCart className="h-6 w-6 text-gray-900 hover:text-white" />
-                </Link>
-              </button>
-            </>
-          ) : (
-            <button className="bg-black hover:bg-white hover:text-white rounded-full p-2">
-              <Link to="/login">
-                <FiUser className="h-6 w-6 text-white hover:text-black" />
-              </Link>
-            </button>
-          )}
-        </div>
-      </div>
-    </header>
+
   );
 }
 
