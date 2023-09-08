@@ -5,7 +5,7 @@ function Recomendacoes () {
 
   return (
     <div class="container mx-auto">
-  <h2 class="text-5xl font-extrabold text-center mb-6 py-8 bg-gradient-to-r from-red-500 to-blue-500 text-white rounded-lg">RECOMENDAÇÕES</h2>
+  <h2 class="text-5xl font-extrabold text-center mb-6 py-8 bg-gradient-to-r from-yellow-600 to-gray-900 text-white rounded-lg">RECOMENDAÇÕES</h2>
   <div class="grid grid-cols-2 gap-8">
     <div class="h-96 bg-rec-tshirt bg-cover bg-center">
       <div class="p-4 bg-black bg-opacity-50">

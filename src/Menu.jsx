@@ -16,7 +16,7 @@ function Menu() {
     <div>
       <Header/>
       <div>
-      <img src="/staslideprod.png" alt="Imagem Grande" className="w-full" />
+      <img src="/PainelInicial.png" alt="Imagem Grande" className="w-full" />
       </div>
       <br/><br/><br/>
       <ProdDestaque/>

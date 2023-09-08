@@ -39,7 +39,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-white text-gray-900 py-6 pb-4">
+    <header className="bg-gradient-to-r from-yellow-600 to-gray-900 text-white py-6 pb-4">
       <div className="container mx-auto flex items-center justify-between py-4">
         <div className="flex items-center">
           <Link to="/">
@@ -92,9 +92,9 @@ function Header() {
               </button>
             </>
           ) : (
-            <button className="hover:bg-black hover:text-white rounded-full p-2">
+            <button className="bg-black hover:bg-white hover:text-white rounded-full p-2">
               <Link to="/login">
-                <FiUser className="h-6 w-6 text-gray-900 hover:text-white" />
+                <FiUser className="h-6 w-6 text-white hover:text-black" />
               </Link>
             </button>
           )}
