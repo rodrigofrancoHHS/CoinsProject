@@ -12,12 +12,12 @@ const SobreNos = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col justify-center">
               <div>
-                <h1 className="text-5xl font-bold mb-6">Conheça a STA - A sua loja de roupas em Santa Cruz</h1>
+                <h1 className="text-5xl font-bold mb-6">Conheça a  - A sua loja de moedas em </h1>
                 <p className="text-lg leading-relaxed mb-6">
-                A STA é uma loja especializada na venda de roupas da moda, oferecendo uma ampla variedade de peças exclusivas, como t-shirts, sweats e caps. Estamos localizados em Santa Cruz, uma localidade conhecida pela sua atmosfera descontraída e estilo único.
+                A  é uma loja especializada na venda de moedas, oferecendo uma ampla variedade de peças exclusivas. Estamos localizados em , uma localidade conhecida pela sua atmosfera descontraída e estilo único.
                 </p>
                 <p className="text-lg leading-relaxed mb-6">
-                Além de oferecer uma ampla seleção de roupas, também nos orgulhamos do nosso excelente atendimento ao cliente. A nossa equipa está sempre pronta para ajudar, fornecendo orientações e sugestões personalizadas para ajudá-lo a encontrar as peças perfeitas que se adequem ao seu estilo e personalidade.
+                Além de oferecer uma ampla seleção de moedas, também nos orgulhamos do nosso excelente atendimento ao cliente. A nossa equipa está sempre pronta para ajudar, fornecendo orientações e sugestões personalizadas para ajudá-lo a encontrar as moedas perfeitas que se adequem ao seu estilo e personalidade.
                 </p>
                 
                 <Link to="/ContactPage/" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg inline-block">
@@ -28,7 +28,7 @@ const SobreNos = () => {
             <div className="flex justify-end">
               <div className="w-full h-auto rounded-lg shadow-lg" style={{ maxWidth: '800px' }}>
                 <img
-                  src="/Sobre.png"
+                  src="Sobre.png"
                   alt="Equipe"
                   className="w-full h-full object-cover rounded"
                 />

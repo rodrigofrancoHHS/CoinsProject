@@ -91,22 +91,22 @@ const ContactPage = () => {
         <div className="flex items-center text-gray-800 mb-4">
     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
     <span>
-      ManelSport <br/>
-      Carlos Manuel Coelho Dias, Lda | NIF: PT50 504 552 392<br/>
-      Rua José Verissimo - Loja A - Prédio AMJ - Santa Cruz<br/>
-      2560-499 SILVEIRA<br/>
-      Portugal<br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </span>
   </div>
   
   <a href="tel:+123456789" className="flex items-center text-gray-800 mb-4">
     <FontAwesomeIcon icon={faPhone} className="mr-2" />
-    <span>+351 261931617  (Chamada para rede fixa nacional)</span>
+    <span>  (Chamada para rede fixa nacional)</span>
   </a>
   
   <a href="mailto:info@empresa.com" className="flex items-center text-gray-800">
     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-    <span>manelsport@manelsport.com</span>
+    <span>«</span>
   </a> 
       </div>
       </div>

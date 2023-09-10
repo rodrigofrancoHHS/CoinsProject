@@ -48,7 +48,7 @@ function Header() {
   <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4">
     <div className="flex items-center">
       <Link to="/">
-        <img src="/stalogo.png" alt="Logotipo" className="h-16 pb-0" />
+        <img src="talogo.png" alt="Logotipo" className="h-16 pb-0" />
       </Link>
     </div>
 
@@ -57,17 +57,17 @@ function Header() {
       <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 text-xl">
         <li>
           <Link to="/MenuSweats" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-            Sweats
+            Produtos
           </Link>
         </li>
         <li>
           <Link to="/MenuTshirts" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-            T-Shirts
+            Novidades
           </Link>
         </li>
         <li>
           <Link to="/MenuCaps" className="hover:bg-black hover:text-white px-4 py-2 rounded-lg">
-            Chapéus
+            Os mais Vendidos
           </Link>
         </li>
         <li>
@@ -97,17 +97,17 @@ function Header() {
       >
         <li>
           <Link to="/MenuSweats" className="text-white hover:text-yellow-600 block py-2">
-            Sweats
+            Produtos
           </Link>
         </li>
         <li>
           <Link to="/MenuTshirts" className="text-white hover:text-yellow-600 block py-2">
-            T-Shirts
+            Novidades
           </Link>
         </li>
         <li>
           <Link to="/MenuCaps" className="text-white hover:text-yellow-600 block py-2">
-            Chapéus
+            Os mais Vendidos
           </Link>
         </li>
         <li>

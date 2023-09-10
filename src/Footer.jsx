@@ -48,13 +48,13 @@ function Footer() {
           <div className="col-span-1">
             <h2 className="text-2xl font-bold mb-4">INFORMAÇÃO DA LOJA</h2>
             <ul>
-              <li>StaCruz</li>
-              <li>Carlos Manuel Coelho Dias, Lda | NIF: PT50 504 552 392</li>
-              <li>Rua José Verissimo - Loja A - Prédio AMJ - Santa Cruz</li>
-              <li>2560-499 SILVEIRA</li>
-              <li>Portugal</li>
-              <li>Ligue-nos: +351 261931617 (Chamada para rede fixa nacional)</li>
-              <li>Envie-nos um e-mail: manelsport@manelsport.com</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li> (Chamada para rede fixa nacional)</li>
+              <li>Envie-nos um e-mail: </li>
             </ul>
           </div>
           
